@@ -47,6 +47,24 @@ mySprite = sprites.create(img`
     . 4 5 4 5 5 4 e . . . . . . . . 
     . . 4 4 e e e . . . . . . . . . 
     `, SpriteKind.Player)
+let Obstacke = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . 3 3 3 3 3 3 . . . . . 
+    . . . 3 3 . 3 3 3 3 3 . . . . . 
+    . . . 3 . 3 . 3 . 3 3 3 . . . . 
+    . . 3 . 3 . 3 . 3 . 3 3 . . . . 
+    . 3 . . 3 . 3 3 . . 3 3 . . . . 
+    . 3 . . 3 3 3 3 . 3 . 3 . . . . 
+    . 3 . . 3 . . . . 3 3 3 . . . . 
+    . 3 . . 3 . . 3 3 . 3 . . . . . 
+    . . 3 . . 3 3 . . . 3 . . . . . 
+    . . . 3 . . 3 3 3 3 . . . . . . 
+    . . . . 3 3 3 3 3 3 3 . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Enemy)
 controller.moveSprite(mySprite)
 tiles.setCurrentTilemap(tilemap`level1`)
 tiles.placeOnRandomTile(mySprite, sprites.builtin.forestTiles0)
