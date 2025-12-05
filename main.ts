@@ -30,43 +30,43 @@ scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles23, function (
 })
 let mySprite: Sprite = null
 mySprite = sprites.create(img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . 7 7 7 . . . . . . 
-    . . . . . . 7 7 . 7 . . . . . . 
-    . . . . . . 7 . . 7 . . . . . . 
-    . . . . . . 7 7 7 7 . . . . . . 
-    . . . . . . . 7 7 . . . . . . . 
-    . . . . . . . . 7 . . . . . . . 
-    . . . . . . . . 7 . 7 . . . . . 
-    . . . . 7 7 7 7 7 7 7 . . . . . 
-    . . . . 7 . . . 7 . . . . . . . 
-    . . . . . . . . 7 . . . . . . . 
-    . . . . . . . . 7 . . . . . . . 
-    . . . . . . . 7 7 7 . . . . . . 
-    . . . . . . . 7 . 7 7 . . . . . 
-    . . . . . . 7 . . . 7 . . . . . 
-    . . . . . . 7 . . . . 7 . . . . 
+    . . . . 1 . . . . . 1 . . . . . 
+    . . . . 1 3 . . . 3 1 . . . . . 
+    . . . . 1 3 1 . 1 3 1 . . . . . 
+    . . . . 1 3 1 . 1 3 1 . . . . . 
+    . . . . 1 1 1 1 1 1 1 . . . . . 
+    . . . 1 1 f 1 1 1 f 1 1 . . . . 
+    . . . 1 1 f 1 1 1 f 1 1 . . . . 
+    . . . 1 1 f 1 1 1 f 1 1 . . . . 
+    . . . 1 1 1 1 3 1 1 1 1 . . . . 
+    . . . 1 1 1 1 1 1 1 1 1 . . . . 
+    . . . . 1 1 1 1 1 1 1 . . . . . 
+    . . . . . 1 1 1 1 1 . . . . . . 
+    . . . . 1 1 1 1 1 1 1 . . . . . 
+    . . . 1 1 1 1 1 1 1 1 1 . . . . 
+    . . . 1 1 1 1 1 1 1 1 1 . . . . 
+    . . . 1 1 d 1 1 1 d 1 1 . . . . 
     `, SpriteKind.Player)
 let Obstacke = sprites.create(img`
     . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . 3 3 3 3 3 3 . . . . . 
-    . . . 3 3 . 3 3 3 3 3 . . . . . 
-    . . . 3 . 3 . 3 . 3 3 3 . . . . 
-    . . 3 . 3 . 3 . 3 . 3 3 . . . . 
-    . 3 . . 3 . 3 3 . . 3 3 . . . . 
-    . 3 . . 3 3 3 3 . 3 . 3 . . . . 
-    . 3 . . 3 . . . . 3 3 3 . . . . 
-    . 3 . . 3 . . 3 3 . 3 . . . . . 
-    . . 3 . . 3 3 . . . 3 . . . . . 
-    . . . 3 . . 3 3 3 3 . . . . . . 
-    . . . . 3 3 3 3 3 3 3 . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
+    . . . . . e e e e e e 5 5 . . . 
+    . . . e e 5 1 1 1 1 1 e e 5 . . 
+    . . e e e 1 1 f 1 f 1 1 e e e . 
+    . . e 5 1 1 1 1 1 1 1 1 1 5 e . 
+    . e 5 1 1 f 1 1 1 1 1 f 1 1 e 5 
+    . e e 1 1 1 1 1 f 1 1 1 1 1 e 5 
+    . e e 1 1 1 1 1 f 1 1 1 1 1 e 5 
+    . e e 1 f 1 1 1 f f 1 1 f 1 e 5 
+    . e e 1 1 1 1 1 1 1 1 1 1 1 e 5 
+    . e e 1 1 1 1 1 1 1 1 1 1 1 e e 
+    . e e 1 1 f 1 1 1 1 1 f 1 1 1 e 
+    . . e e 1 1 1 1 1 1 1 1 1 e e . 
+    . . e e e 1 1 f 1 f 1 1 e e 5 . 
+    . . . 5 e e 1 1 1 1 1 e e 5 . . 
+    . . . . . e e e e e 5 5 . . . . 
     `, SpriteKind.Enemy)
 controller.moveSprite(mySprite)
 tiles.setCurrentTilemap(tilemap`level1`)
-tiles.placeOnRandomTile(mySprite, sprites.builtin.forestTiles0)
+tiles.placeOnRandomTile(mySprite, sprites.swamp.swampTile1)
 scene.cameraFollowSprite(mySprite)
 info.startCountdown(60)
