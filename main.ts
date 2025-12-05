@@ -71,7 +71,7 @@ let Obstacke = sprites.create(img`
     . . . . . e e e e e 5 5 . . . . 
     `, SpriteKind.Enemy)
 controller.moveSprite(mySprite)
-Obstacke.setPosition(60, 74)
+Obstacke.setPosition(60, 71)
 tiles.setCurrentTilemap(tilemap`level1`)
 tiles.placeOnRandomTile(mySprite, assets.tile`myTile`)
 scene.cameraFollowSprite(mySprite)
