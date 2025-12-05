@@ -70,6 +70,24 @@ let Obstacke = sprites.create(img`
     . . . 5 e e 1 1 1 1 1 e e 5 . . 
     . . . . . e e e e e 5 5 . . . . 
     `, SpriteKind.Enemy)
+let Obstacle2 = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Enemy)
 controller.moveSprite(mySprite)
 Obstacke.setPosition(60, 71)
 tiles.setCurrentTilemap(tilemap`level1`)
