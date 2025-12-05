@@ -28,6 +28,11 @@ scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles23, function (
     scene.cameraFollowSprite(mySprite)
     info.startCountdown(20)
 })
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(mySprite, sprites.swamp.swampTile1)
+    music.play(music.melodyPlayable(music.wawawawaa), music.PlaybackMode.UntilDone)
+    info.changeScoreBy(-1)
+})
 let mySprite: Sprite = null
 mySprite = sprites.create(img`
     . . . . 1 . . . . . 1 . . . . . 
@@ -66,7 +71,10 @@ let Obstacke = sprites.create(img`
     . . . . . e e e e e 5 5 . . . . 
     `, SpriteKind.Enemy)
 controller.moveSprite(mySprite)
+Obstacke.setPosition(120, 55)
 tiles.setCurrentTilemap(tilemap`level1`)
 tiles.placeOnRandomTile(mySprite, sprites.swamp.swampTile1)
 scene.cameraFollowSprite(mySprite)
 info.startCountdown(60)
+info.setScore(0)
+music.play(music.stringPlayable("- D F F D E F G ", 120), music.PlaybackMode.LoopingInBackground)
