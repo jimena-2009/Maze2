@@ -71,10 +71,10 @@ let Obstacke = sprites.create(img`
     . . . . . e e e e e 5 5 . . . . 
     `, SpriteKind.Enemy)
 controller.moveSprite(mySprite)
-Obstacke.setPosition(120, 55)
+Obstacke.setPosition(60, 71)
 tiles.setCurrentTilemap(tilemap`level1`)
 tiles.placeOnRandomTile(mySprite, assets.tile`myTile`)
 scene.cameraFollowSprite(mySprite)
 info.startCountdown(60)
 info.setScore(0)
-music.play(music.stringPlayable("- D F F D E F G ", 120), music.PlaybackMode.LoopingInBackground)
+music.play(music.createSong(hex`00780004080200`), music.PlaybackMode.LoopingInBackground)
