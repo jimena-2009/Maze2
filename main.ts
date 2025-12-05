@@ -29,7 +29,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles23, function (
     info.startCountdown(20)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
-    tiles.placeOnRandomTile(mySprite, sprites.swamp.swampTile1)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile`)
     music.play(music.melodyPlayable(music.wawawawaa), music.PlaybackMode.UntilDone)
     info.changeScoreBy(-1)
 })
