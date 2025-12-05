@@ -73,7 +73,7 @@ let Obstacke = sprites.create(img`
 controller.moveSprite(mySprite)
 Obstacke.setPosition(120, 55)
 tiles.setCurrentTilemap(tilemap`level1`)
-tiles.placeOnRandomTile(mySprite, sprites.swamp.swampTile1)
+tiles.placeOnRandomTile(mySprite, assets.tile`myTile`)
 scene.cameraFollowSprite(mySprite)
 info.startCountdown(60)
 info.setScore(0)
