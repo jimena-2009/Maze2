@@ -108,7 +108,7 @@ let Obstaclle3 = sprites.create(img`
     `, SpriteKind.Enemy)
 controller.moveSprite(mySprite)
 Obstacke.setPosition(60, 71)
-Obstacle2.setPosition(206, 74)
+Obstacle2.setPosition(206, 70)
 Obstaclle3.setPosition(107, 57)
 tiles.setCurrentTilemap(tilemap`level1`)
 tiles.placeOnRandomTile(mySprite, assets.tile`myTile`)
