@@ -16,17 +16,17 @@ scene.onHitWall(SpriteKind.Enemy, function (sprite, location) {
 scene.onOverlapTile(SpriteKind.Player, sprites.vehicle.roadTurn4, function (sprite, location) {
     game.gameOver(true)
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile2`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`level2`)
+    tiles.placeOnRandomTile(mySprite, sprites.castle.rock0)
+    scene.cameraFollowSprite(mySprite)
+    info.startCountdown(45)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles23, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level4`)
     tiles.placeOnRandomTile(mySprite, sprites.builtin.oceanDepths9)
     scene.cameraFollowSprite(mySprite)
     info.startCountdown(20)
-})
-scene.onOverlapTile(SpriteKind.Player, assets.tile`transparency16`, function (sprite, location) {
-    tiles.setCurrentTilemap(tilemap`level2`)
-    tiles.placeOnRandomTile(mySprite, sprites.castle.rock0)
-    scene.cameraFollowSprite(mySprite)
-    info.startCountdown(45)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile`)
