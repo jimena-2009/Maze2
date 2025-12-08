@@ -648,9 +648,9 @@ let O12: Sprite = null
 let _011: Sprite = null
 let mySprite: Sprite = null
 mySprite = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
     . . . . 1 . . . . . 1 . . . . . 
     . . . . 1 3 . . . 3 1 . . . . . 
-    . . . . 1 3 1 . 1 3 1 . . . . . 
     . . . . 1 3 1 . 1 3 1 . . . . . 
     . . . . 1 1 1 1 1 1 1 . . . . . 
     . . . 1 1 f 1 1 1 f 1 1 . . . . 
@@ -662,8 +662,8 @@ mySprite = sprites.create(img`
     . . . . . 1 1 1 1 1 . . . . . . 
     . . . . 1 1 1 1 1 1 1 . . . . . 
     . . . 1 1 1 1 1 1 1 1 1 . . . . 
-    . . . 1 1 1 1 1 1 1 1 1 . . . . 
-    . . . 1 1 d 1 1 1 d 1 1 . . . . 
+    . . . 1 1 1 d 1 d 1 1 1 . . . . 
+    . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
 let Obstacke = sprites.create(img`
     . . . . . . . . . . . . . . . . 
