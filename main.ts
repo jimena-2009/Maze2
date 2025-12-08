@@ -336,7 +336,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy5, function (sprite, otherS
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, location) {
     sprites.destroyAllSpritesOfKind(SpriteKind.Enemy4)
     sprites.destroyAllSpritesOfKind(SpriteKind.Good4)
-    _011 = sprites.create(img`
+    O15 = sprites.create(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -353,8 +353,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, 
         . . . . . . . 7 . . . . . . . . 
         . . . . . . 7 7 . . . . . . . . 
         . . . . . . . 7 . . . . . . . . 
-        `, SpriteKind.Enemy3)
-    O12 = sprites.create(img`
+        `, SpriteKind.Enemy5)
+    O16 = sprites.create(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -371,8 +371,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, 
         . . . . . . . 7 . . . . . . . . 
         . . . . . . 7 7 . . . . . . . . 
         . . . . . . . 7 . . . . . . . . 
-        `, SpriteKind.Enemy3)
-    O13 = sprites.create(img`
+        `, SpriteKind.Enemy5)
+    O17 = sprites.create(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -389,8 +389,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, 
         . . . . . . . 7 . . . . . . . . 
         . . . . . . 7 7 . . . . . . . . 
         . . . . . . . 7 . . . . . . . . 
-        `, SpriteKind.Enemy3)
-    O14 = sprites.create(img`
+        `, SpriteKind.Enemy5)
+    O18 = sprites.create(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -407,8 +407,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, 
         . . . . . . . 7 . . . . . . . . 
         . . . . . . 7 7 . . . . . . . . 
         . . . . . . . 7 . . . . . . . . 
-        `, SpriteKind.Enemy3)
-    C14 = sprites.create(img`
+        `, SpriteKind.Enemy5)
+    C17 = sprites.create(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . 7 . . . . 
         . . . . . . . . . . . . 7 . . . 
@@ -425,8 +425,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, 
         . . 4 4 4 4 4 e e . . . . . . . 
         . 4 4 4 4 e e . . . . . . . . . 
         . 4 4 e e . . . . . . . . . . . 
-        `, SpriteKind.Good3)
-    C15 = sprites.create(img`
+        `, SpriteKind.Good5)
+    C18 = sprites.create(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . 7 . . . . 
         . . . . . . . . . . . . 7 . . . 
@@ -443,8 +443,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, 
         . . 4 4 4 4 4 e e . . . . . . . 
         . 4 4 4 4 e e . . . . . . . . . 
         . 4 4 e e . . . . . . . . . . . 
-        `, SpriteKind.Good3)
-    C16 = sprites.create(img`
+        `, SpriteKind.Good5)
+    C19 = sprites.create(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . 7 . . . . 
         . . . . . . . . . . . . 7 . . . 
@@ -461,9 +461,9 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, 
         . . 4 4 4 4 4 e e . . . . . . . 
         . 4 4 4 4 e e . . . . . . . . . 
         . 4 4 e e . . . . . . . . . . . 
-        `, SpriteKind.Good3)
-    _011.setPosition(97, 0)
-    O12.setPosition(0, 0)
+        `, SpriteKind.Good5)
+    O15.setPosition(97, 0)
+    O16.setPosition(0, 0)
     O13.setPosition(0, 0)
     O14.setPosition(0, 0)
     C14.setPosition(0, 0)
@@ -625,6 +625,13 @@ let O10: Sprite = null
 let O9: Sprite = null
 let O8: Sprite = null
 let O7: Sprite = null
+let C19: Sprite = null
+let C18: Sprite = null
+let C17: Sprite = null
+let O18: Sprite = null
+let O17: Sprite = null
+let O16: Sprite = null
+let O15: Sprite = null
 let C10: Sprite = null
 let C9: Sprite = null
 let C8: Sprite = null
