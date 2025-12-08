@@ -14,6 +14,66 @@ scene.onOverlapTile(SpriteKind.Player, sprites.vehicle.roadTurn4, function (spri
     game.gameOver(true)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile2`, function (sprite, location) {
+    sprites.destroy(Obstacke)
+    sprites.destroy(Obstacle2)
+    sprites.destroy(Obstaclle3)
+    Ockatle4 = sprites.create(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . 2 2 2 2 2 2 2 . . . . . 
+        . . . 2 2 2 2 2 2 . . 2 . . . . 
+        . . . 2 2 . . . 2 . . 2 . . . . 
+        . . . 2 2 . . . 2 . . 2 . . . . 
+        . . . 2 2 . . . 2 . . 2 . . . . 
+        . . . 2 2 2 2 2 2 . . 2 . . . . 
+        . . . 2 . . . . . . . 2 . . . . 
+        . . . 2 . . . . . . . 2 . . . . 
+        . . . . 2 2 2 2 2 2 2 . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, SpriteKind.Enemy)
+    Obstacle5 = sprites.create(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . 3 3 3 3 3 . . . . . 
+        . . . . . 3 3 3 3 3 3 3 . . . . 
+        . . . . 3 3 . . 3 3 3 . 3 . . . 
+        . . . . 3 . . 3 3 3 3 3 3 . . . 
+        . . . 3 . . 3 3 3 3 3 3 3 . . . 
+        . . . 3 . 3 . 3 3 . 3 3 3 . . . 
+        . . . 3 . 3 3 3 . 3 . 3 3 . . . 
+        . . . 3 3 3 3 3 . 3 . 3 . . . . 
+        . . . 3 3 3 3 3 3 . 3 3 . . . . 
+        . . . . 3 . 3 3 3 3 3 . . . . . 
+        . . . . . 3 3 3 3 3 . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, SpriteKind.Enemy)
+    Obstacke6 = sprites.create(img`
+        . . . . . 9 9 9 9 9 9 . . . . . 
+        . . . . 9 9 9 . 9 9 . . . 9 . . 
+        . . . 9 9 9 9 . 9 . . . 9 . . . 
+        . . 9 9 9 . 9 9 9 9 . . 9 9 . . 
+        . . 9 9 . 9 . 9 9 . . 9 9 9 . . 
+        . . . 9 9 . 9 9 9 . 9 9 . 9 . . 
+        . . 9 9 . 9 9 9 . 9 9 9 . 9 . . 
+        . . 9 9 9 9 9 9 9 9 9 9 . 9 . . 
+        . 9 9 9 9 9 9 . 9 9 9 . . 9 9 . 
+        9 9 9 . 9 9 9 9 9 9 9 . . 9 9 . 
+        . 9 9 9 9 9 . 9 9 9 9 . 9 9 9 . 
+        . 9 9 9 9 9 9 9 9 9 . . 9 9 9 . 
+        . 9 9 9 . 9 9 9 9 9 . 9 . 9 . . 
+        . . 9 . 9 9 9 . 9 9 9 . 9 9 . . 
+        . . . . 9 9 . . 9 9 . . 9 . . . 
+        . . . . . . . . 9 9 . . . . . . 
+        `, SpriteKind.Enemy)
+    Ockatle4.setPosition(0, 0)
+    Obstacle5.setPosition(0, 0)
+    Obstacke6.setPosition(0, 0)
     tiles.setCurrentTilemap(tilemap`level2`)
     tiles.placeOnRandomTile(mySprite, sprites.castle.rock0)
     scene.cameraFollowSprite(mySprite)
@@ -30,6 +90,12 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     music.play(music.melodyPlayable(music.wawawawaa), music.PlaybackMode.UntilDone)
     info.changeScoreBy(-1)
 })
+let Obstacke6: Sprite = null
+let Obstacle5: Sprite = null
+let Ockatle4: Sprite = null
+let Obstaclle3: Sprite = null
+let Obstacle2: Sprite = null
+let Obstacke: Sprite = null
 let mySprite: Sprite = null
 mySprite = sprites.create(img`
     . . . . 1 . . . . . 1 . . . . . 
@@ -49,7 +115,7 @@ mySprite = sprites.create(img`
     . . . 1 1 1 1 1 1 1 1 1 . . . . 
     . . . 1 1 d 1 1 1 d 1 1 . . . . 
     `, SpriteKind.Player)
-let Obstacke = sprites.create(img`
+Obstacke = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . e e e e e e 5 5 . . . 
     . . . e e 5 1 1 1 1 1 e e 5 . . 
@@ -67,7 +133,7 @@ let Obstacke = sprites.create(img`
     . . . 5 e e 1 1 1 1 1 e e 5 . . 
     . . . . . e e e e e 5 5 . . . . 
     `, SpriteKind.Enemy)
-let Obstacle2 = sprites.create(img`
+Obstacle2 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . e e e e e e 5 5 . . . 
     . . . e e 5 1 1 1 1 1 e e 5 . . 
@@ -85,7 +151,7 @@ let Obstacle2 = sprites.create(img`
     . . . 5 e e 1 1 1 1 1 e e 5 . . 
     . . . . . e e e e e 5 5 . . . . 
     `, SpriteKind.Enemy)
-let Obstaclle3 = sprites.create(img`
+Obstaclle3 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . e e e e e e 5 5 . . . 
     . . . e e 5 1 1 1 1 1 e e 5 . . 
