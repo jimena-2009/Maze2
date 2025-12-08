@@ -10,9 +10,6 @@ scene.onOverlapTile(SpriteKind.Player, sprites.castle.saplingPine, function (spr
     scene.cameraFollowSprite(mySprite)
     info.startCountdown(30)
 })
-scene.onHitWall(SpriteKind.Enemy, function (sprite, location) {
-	
-})
 scene.onOverlapTile(SpriteKind.Player, sprites.vehicle.roadTurn4, function (sprite, location) {
     game.gameOver(true)
 })
