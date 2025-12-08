@@ -46,6 +46,14 @@ namespace myTiles {
     export const tile21 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile22 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile23 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile24 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile25 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile26 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -145,24 +153,24 @@ namespace myTiles {
 . . . 2 2 . . . . . 2 . . . . . 
 `, [myTiles.transparency16,myTiles.tile16,myTiles.tile17,myTiles.tile20,myTiles.tile21,myTiles.tile22], TileScale.Sixteen);
             case "level6":
-            case "level6":return tiles.createTilemap(hex`1000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`, img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`, [myTiles.transparency16], TileScale.Sixteen);
+            case "level6":return tiles.createTilemap(hex`1000100001010101010501010101010501010101010404010101010105040101040404040105040104040401010401010401010402050401040104040104040404010104040104010401010401010401010501040401040104050104010104010105050404010404040101040101040404040404040104010101040401010401010101040401040101010401010504010105010404010401040404010404040101010103040104010101010104010101010101040401040101010101040104040404010404010404040101010404040101040104040504010405050104010101010401040404040104040404040401010504040401010105010101010101010101010101`, img`
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 . . 2 2 2 2 2 2 . 2 2 . . . . 
+2 2 . 2 . . . 2 2 . 2 2 . 2 2 . 
+. 2 . 2 . 2 . . 2 . . . . 2 2 . 
+. 2 . 2 . 2 2 . 2 2 . 2 2 2 2 . 
+. 2 . 2 . 2 2 . 2 2 . 2 2 2 2 . 
+. 2 . . . 2 2 . 2 2 . . . . . . 
+. 2 . 2 2 2 . . 2 2 . 2 2 2 2 . 
+. 2 . 2 2 2 . 2 2 2 . 2 2 2 2 . 
+. 2 . 2 . . . 2 . . . 2 2 2 2 . 
+. 2 . 2 2 2 2 2 . 2 2 2 2 2 2 . 
+. 2 . 2 2 2 2 2 . 2 . . . . 2 . 
+. 2 . . . 2 2 2 . . . 2 2 . 2 . 
+. 2 . 2 . 2 2 2 . 2 2 2 2 . 2 . 
+. . . 2 . . . . . . 2 2 2 . . . 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+`, [myTiles.transparency16,myTiles.tile18,myTiles.tile23,myTiles.tile24,myTiles.tile25,myTiles.tile26], TileScale.Sixteen);
         }
         return null;
     })
@@ -214,6 +222,14 @@ namespace myTiles {
             case "tile21":return tile21;
             case "myTile20":
             case "tile22":return tile22;
+            case "myTile21":
+            case "tile23":return tile23;
+            case "myTile22":
+            case "tile24":return tile24;
+            case "myTile23":
+            case "tile25":return tile25;
+            case "myTile24":
+            case "tile26":return tile26;
         }
         return null;
     })
