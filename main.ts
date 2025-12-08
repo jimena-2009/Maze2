@@ -140,10 +140,10 @@ Obstacle2 = sprites.create(img`
     . . e e e 1 1 f 1 f 1 1 e e e . 
     . . e 5 1 1 1 1 1 1 1 1 1 5 e . 
     . e 5 1 1 f 1 1 1 1 1 f 1 1 e 5 
-    . e e 1 1 1 1 1 f 1 1 1 1 1 e 5 
-    . e e 1 1 1 1 1 f 1 1 1 1 1 e 5 
-    . e e 1 f 1 1 1 f f 1 1 f 1 e 5 
     . e e 1 1 1 1 1 1 1 1 1 1 1 e 5 
+    . e e 1 1 1 1 1 1 1 1 1 1 1 e 5 
+    . e e 1 f 1 f f f 1 1 1 f 1 e 5 
+    . e e 1 1 1 1 1 1 f 1 1 1 1 e 5 
     . e e 1 1 1 1 1 1 1 1 1 1 1 e e 
     . e e 1 1 f 1 1 1 1 1 f 1 1 1 e 
     . . e e 1 1 1 1 1 1 1 1 1 e e . 
@@ -158,11 +158,11 @@ Obstaclle3 = sprites.create(img`
     . . e e e 1 1 f 1 f 1 1 e e e . 
     . . e 5 1 1 1 1 1 1 1 1 1 5 e . 
     . e 5 1 1 f 1 1 1 1 1 f 1 1 e 5 
-    . e e 1 1 1 1 1 f 1 1 1 1 1 e 5 
-    . e e 1 1 1 1 1 f 1 1 1 1 1 e 5 
-    . e e 1 f 1 1 1 f f 1 1 f 1 e 5 
     . e e 1 1 1 1 1 1 1 1 1 1 1 e 5 
-    . e e 1 1 1 1 1 1 1 1 1 1 1 e e 
+    . e e 1 1 1 1 1 1 f 1 1 1 1 e 5 
+    . e e 1 f 1 1 1 f 1 1 1 f 1 e 5 
+    . e e 1 1 1 1 1 f 1 1 1 1 1 e 5 
+    . e e 1 1 1 1 1 f 1 1 1 1 1 e e 
     . e e 1 1 f 1 1 1 1 1 f 1 1 1 e 
     . . e e 1 1 1 1 1 1 1 1 1 e e . 
     . . e e e 1 1 f 1 f 1 1 e e 5 . 
