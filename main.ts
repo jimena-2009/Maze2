@@ -163,7 +163,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Good5, function (sprite, otherSp
     music.play(music.melodyPlayable(music.powerUp), music.PlaybackMode.UntilDone)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy4, function (sprite, otherSprite) {
-    tiles.placeOnRandomTile(mySprite, assets.tile`transparency16`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile20`)
     info.changeLifeBy(-1)
     music.play(music.melodyPlayable(music.wawawawaa), music.PlaybackMode.UntilDone)
 })
@@ -315,163 +315,23 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile2`, function (sprite, l
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile7`)
     scene.cameraFollowSprite(mySprite)
 })
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
-    info.changeScoreBy(1)
-    music.play(music.melodyPlayable(music.powerUp), music.PlaybackMode.UntilDone)
-})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Good2, function (sprite, otherSprite) {
     info.changeScoreBy(1)
     music.play(music.melodyPlayable(music.powerUp), music.PlaybackMode.UntilDone)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy2, function (sprite, otherSprite) {
-    tiles.placeOnRandomTile(mySprite, assets.tile`transparency16`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile7`)
     info.changeLifeBy(-1)
     music.play(music.melodyPlayable(music.wawawawaa), music.PlaybackMode.UntilDone)
-})
-scene.onOverlapTile(SpriteKind.Player, assets.tile`transparency16`, function (sprite, location) {
-    sprites.destroyAllSpritesOfKind(SpriteKind.Enemy3)
-    sprites.destroyAllSpritesOfKind(SpriteKind.Good3)
-    _011 = sprites.create(img`
-        . . . . . . 2 2 2 2 2 . . . . . 
-        . . . . . . 2 2 2 2 2 . . . . . 
-        . . . . . . 2 2 2 2 2 . . . . . 
-        . . . . . . 2 2 2 2 2 2 . . . . 
-        . . . . . . 2 2 2 2 2 2 . . . . 
-        . . . . . . 2 2 2 2 2 2 . . . . 
-        . . . . . . 2 2 2 2 2 2 . . . . 
-        . . . . . . . 2 2 2 2 2 . . . . 
-        . . . . . . . 2 2 2 2 2 . . . . 
-        . . . . . . . 2 2 2 2 2 . . . . 
-        . . . . . . . 2 2 2 2 2 . . . . 
-        . . . . . . . 2 2 2 2 2 . . . . 
-        . . . . . . . 2 2 2 2 2 . . . . 
-        . . . . . . . 2 2 2 2 2 . . . . 
-        . . . . . . . 2 2 2 2 2 . . . . 
-        . . . . . . . 2 2 2 2 2 . . . . 
-        `, SpriteKind.Enemy4)
-    O12 = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        5 5 5 5 . . . . . . . . . . . . 
-        5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
-        5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
-        5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
-        5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
-        5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
-        . . . . . . . . . . . . . 5 5 5 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        `, SpriteKind.Enemy4)
-    O13 = sprites.create(img`
-        . . . . . . . . 7 7 7 7 7 7 7 7 
-        . . . . . 7 7 7 7 7 7 7 7 7 7 7 
-        7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
-        7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
-        7 7 7 7 7 7 7 7 7 7 7 7 7 7 . . 
-        7 7 7 7 7 7 7 7 7 7 7 7 . . . . 
-        7 7 7 7 7 7 7 7 7 7 7 7 . . . . 
-        . . . . . . 7 7 7 7 7 7 7 . . . 
-        . . . . . . 7 7 7 7 7 7 7 . . . 
-        . . . . . . 7 7 7 7 7 7 7 . . . 
-        . . . . . . . 7 7 7 7 7 7 7 7 . 
-        . . . . . . . . 7 7 7 7 7 7 7 7 
-        . . . . . . . . 7 7 7 7 7 7 7 7 
-        . . . . . . . . 7 7 7 7 7 7 7 7 
-        . . . . . . . . . 7 7 7 7 7 7 7 
-        . . . . . . . . . . . 7 7 7 7 7 
-        `, SpriteKind.Enemy4)
-    O14 = sprites.create(img`
-        . . . . . . . . . . . . 6 6 6 6 
-        . . . . . . . . . . 6 6 6 6 6 6 
-        . . . . . . . . 6 6 6 6 6 6 6 6 
-        . . . . . . . 6 6 6 6 6 6 6 6 6 
-        . . . . . . 6 6 6 6 6 6 6 6 6 6 
-        . . . . . 6 6 6 6 6 6 6 6 6 6 6 
-        . . . . 6 6 6 6 6 6 6 6 6 6 . . 
-        . . . . 6 6 6 6 6 6 6 6 . . . . 
-        . . . 6 6 6 6 6 6 6 6 . . . . . 
-        . . 6 6 6 6 6 6 6 6 . . . . . . 
-        . 6 6 6 6 6 6 6 6 . . . . . . . 
-        6 6 6 6 6 6 6 6 6 . . . . . . . 
-        6 6 6 6 6 6 6 6 . . . . . . . . 
-        6 6 6 6 6 6 6 . . . . . . . . . 
-        6 6 6 6 6 6 . . . . . . . . . . 
-        6 6 6 6 6 . . . . . . . . . . . 
-        `, SpriteKind.Enemy4)
-    C14 = sprites.create(img`
-        . . . . c c c c c c . . . . . . 
-        . . . . c c c c c c . . . . . . 
-        . . . . c c c c c c . . . . . . 
-        . . . . c c c c c c . . . . . . 
-        . . . . c c c c c c . . . . . . 
-        . . . . c c c c c c . . . . . . 
-        . . . . . c c c c c . . . . . . 
-        . . . . . c c c c c . . . . . . 
-        . . . . . c c c c c . . . . . . 
-        . . . . . c c c c c . . . . . . 
-        . . . . . c c c c c . . . . . . 
-        . . . . c c c c c c . . . . . . 
-        . . . . c c c c c c . . . . . . 
-        . . . . c c c c c c . . . . . . 
-        . . . . c c c c c c . . . . . . 
-        . . . . c c c c c . . . . . . . 
-        `, SpriteKind.Good4)
-    C15 = sprites.create(img`
-        b b b b b b . . . . . . b b b b 
-        b b b b b b . . . . b b b b b b 
-        b b b b b b b b . b b b b b b b 
-        b b b b b b b b b b b b b b b b 
-        b b b b b b b b b b b b b b b b 
-        . b b b b b b b b b b b b b b b 
-        . . b b b b b b b b b b b b . . 
-        . . . b b b b b b b b b b . . . 
-        . . b b b b b b b b b b b b b . 
-        . b b b b b b b b b b b b b b b 
-        b b b b b b b b b b b b b b b b 
-        b b b b b b b b b b b b b b b b 
-        b b b b b b b . . b b b b b b b 
-        b b b b b b . . . . . b b b b b 
-        b b b b b . . . . . . . . b b b 
-        b b b b . . . . . . . . . b b b 
-        `, SpriteKind.Good4)
-    C16 = sprites.create(img`
-        9 9 9 . . . . . . . . . . . . . 
-        9 9 9 9 . . . . . . . . . . . . 
-        9 9 9 9 9 . . . . . . . . . . . 
-        9 9 9 9 9 9 . . . . . . . . . . 
-        9 9 9 9 9 9 9 9 . . . . . . . . 
-        9 9 9 9 9 9 9 9 9 9 . . . . . . 
-        9 9 9 9 9 9 9 9 9 9 9 . . . . . 
-        . 9 9 9 9 9 9 9 9 9 9 9 . . . . 
-        . . 9 9 9 9 9 9 9 9 9 9 9 . . . 
-        . . . . 9 9 9 9 9 9 9 9 9 9 . . 
-        . . . . . . 9 9 9 9 9 9 9 9 9 . 
-        . . . . . . . 9 9 9 9 9 9 9 9 9 
-        . . . . . . . 9 9 9 9 9 9 9 9 9 
-        . . . . . . . . . 9 9 9 9 9 9 9 
-        . . . . . . . . . . 9 9 9 9 9 9 
-        . . . . . . . . . . . 9 9 9 9 9 
-        `, SpriteKind.Good4)
-    _011.setPosition(0, 0)
-    O12.setPosition(0, 0)
-    O13.setPosition(0, 0)
-    O14.setPosition(0, 0)
-    C14.setPosition(0, 0)
-    C15.setPosition(0, 0)
-    C16.setPosition(0, 0)
-    tiles.setCurrentTilemap(tilemap`level4`)
-    tiles.placeOnRandomTile(mySprite, assets.tile`transparency16`)
-    scene.cameraFollowSprite(mySprite)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy5, function (sprite, otherSprite) {
-    tiles.placeOnRandomTile(mySprite, assets.tile`transparency16`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile21`)
     info.changeLifeBy(-1)
     music.play(music.melodyPlayable(music.wawawawaa), music.PlaybackMode.UntilDone)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Good4, function (sprite, otherSprite) {
+    info.changeScoreBy(1)
+    music.play(music.melodyPlayable(music.powerUp), music.PlaybackMode.UntilDone)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, location) {
     sprites.destroyAllSpritesOfKind(SpriteKind.Enemy4)
