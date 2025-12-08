@@ -71,9 +71,9 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile2`, function (sprite, l
         . . . . 9 9 . . 9 9 . . 9 . . . 
         . . . . . . . . 9 9 . . . . . . 
         `, SpriteKind.Enemy)
-    Ockatle4.setPosition(0, 0)
-    Obstacle5.setPosition(0, 0)
-    Obstacke6.setPosition(0, 0)
+    Ockatle4.setPosition(60, 60)
+    Obstacle5.setPosition(120, 94)
+    Obstacke6.setPosition(249, 39)
     tiles.setCurrentTilemap(tilemap`level2`)
     tiles.placeOnRandomTile(mySprite, sprites.castle.rock0)
     scene.cameraFollowSprite(mySprite)
