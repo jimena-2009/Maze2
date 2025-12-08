@@ -143,8 +143,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile13`, function (sprite, 
         . 4 4 4 4 e e . . . . . . . . . 
         . 4 4 e e . . . . . . . . . . . 
         `, SpriteKind.Good4)
-    _011.setPosition(0, 0)
-    O12.setPosition(0, 0)
+    _011.setPosition(109, 0)
+    O12.setPosition(49, 55)
     O13.setPosition(0, 0)
     O14.setPosition(0, 0)
     C14.setPosition(0, 0)
@@ -462,7 +462,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, 
         . 4 4 4 4 e e . . . . . . . . . 
         . 4 4 e e . . . . . . . . . . . 
         `, SpriteKind.Good3)
-    _011.setPosition(0, 0)
+    _011.setPosition(97, 0)
     O12.setPosition(0, 0)
     O13.setPosition(0, 0)
     O14.setPosition(0, 0)
