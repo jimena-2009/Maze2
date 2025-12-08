@@ -150,7 +150,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile13`, function (sprite, 
     _011.setPosition(109, 0)
     O12.setPosition(49, 55)
     O13.setPosition(188, 18)
-    O14.setPosition(78, 208)
+    O14.setPosition(78, 190)
     C14.setPosition(190, 156)
     C15.setPosition(17, 127)
     C16.setPosition(122, 88)
