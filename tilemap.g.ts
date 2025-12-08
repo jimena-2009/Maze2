@@ -36,6 +36,10 @@ namespace myTiles {
     export const tile11 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile2 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile12 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile19 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -116,7 +120,7 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . 
 `, [myTiles.transparency16,myTiles.tile16,myTiles.tile17,sprites.swamp.swampTile13], TileScale.Sixteen);
             case "level3":
-            case "level3":return tiles.createTilemap(hex`1000100003030303030202020202020303030302030203020302020303030303030303030202030203020203020202020202020304020302030202030303030303030203030203020302020302020202020302030303030203020203030303030303020302020202030202030203020202020303020303030302020302030202020203020203020202020203020302030303030102030203030202030203020302020303020302020302020302030203020202020203030303020203020302030203030302030202020202030203020302030203020302020202020302030203030302030203030303030303020302020202020302020202020202020203030303030303`, img`
+            case "level3":return tiles.createTilemap(hex`1000100003030303030205020202020303030305030603020302020303030303030303030202030503020203020202020202020304020302030202030303030303030203030203060302020302020502020305030303030203020203030303030303020302020202030202030203020602020303020303030305020302030202020203020203020202020203020302030303030102030203030202030203020302060303060302020302020302030203020202020203030303020203020302030203030302030202020206030203020302030203020302020202020305030203030302030203030303030303020302020202060302050202020202020203030303030303`, img`
 . . . . . 2 2 2 2 2 2 . . . . 2 
 . 2 . 2 . 2 2 . . . . . . . . . 
 2 2 . 2 . 2 2 . 2 2 2 2 2 2 2 . 
@@ -133,7 +137,7 @@ namespace myTiles {
 2 . 2 2 2 2 2 . 2 . 2 . . . 2 . 
 2 . . . . . . . 2 . 2 2 2 2 2 . 
 2 2 2 2 2 2 2 2 2 . . . . . . . 
-`, [myTiles.transparency16,myTiles.tile15,sprites.castle.tileDarkGrass2,myTiles.tile14,myTiles.tile2], TileScale.Sixteen);
+`, [myTiles.transparency16,myTiles.tile15,sprites.castle.tileDarkGrass2,myTiles.tile14,myTiles.tile2,myTiles.tile12,myTiles.tile19], TileScale.Sixteen);
         }
         return null;
     })
@@ -175,6 +179,10 @@ namespace myTiles {
             case "tile11":return tile11;
             case "myTile0":
             case "tile2":return tile2;
+            case "myTile10":
+            case "tile12":return tile12;
+            case "myTile17":
+            case "tile19":return tile19;
         }
         return null;
     })

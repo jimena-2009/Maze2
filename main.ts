@@ -334,8 +334,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy5, function (sprite, otherS
     music.play(music.melodyPlayable(music.wawawawaa), music.PlaybackMode.UntilDone)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile11`, function (sprite, location) {
-    sprites.destroyAllSpritesOfKind(SpriteKind.Enemy5)
-    sprites.destroyAllSpritesOfKind(SpriteKind.Good5)
+    sprites.destroyAllSpritesOfKind(SpriteKind.Enemy2)
+    sprites.destroyAllSpritesOfKind(SpriteKind.Good2)
     O7 = sprites.create(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -462,13 +462,13 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile11`, function (sprite, 
         . 4 4 4 4 e e . . . . . . . . . 
         . 4 4 e e . . . . . . . . . . . 
         `, SpriteKind.Player)
-    O7.setPosition(0, 0)
-    O8.setPosition(0, 0)
-    O9.setPosition(0, 0)
-    O10.setPosition(0, 0)
-    C11.setPosition(0, 0)
-    C12.setPosition(0, 0)
-    C13.setPosition(0, 0)
+    O7.setPosition(225, 200)
+    O8.setPosition(160, 100)
+    O9.setPosition(33, 31)
+    O10.setPosition(170, 86)
+    C11.setPosition(14, 7)
+    C12.setPosition(131, 100)
+    C13.setPosition(215, 200)
     tiles.setCurrentTilemap(tilemap`level3`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile0`)
     scene.cameraFollowSprite(mySprite)
